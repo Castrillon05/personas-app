@@ -15,4 +15,8 @@ Route::get('/comunas/{comuna}', [ComunaController::class, 'destroy'])->name('com
 Route::put('/comunas/{comuna}', [ComunaController::class, 'update'])->name('comunas.update');
 Route::get('/comunas/{comuna}/edit', [ComunaController::class, 'edit'])->name('comunas.edit');
 
+Route::get('/departamentos' , [DepartamentoController::class, 'index'])->name('departamentos.index');
+Route::post('/departamentos' , [DepartamentoController::class, 'store'])->name('departamentos.store');
+Route::get('/departamentos/create' , [DepartamentoController::class, 'create'])->name('departamentos.create');
+
 
